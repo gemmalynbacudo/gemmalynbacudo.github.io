@@ -27,28 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error(error);
         });
 
-    // 2. Fetch Latest GitHub Repositories (Replace 'yourusername' with your actual GitHub username)[span_2](start_span)[span_2](end_span)
-    const repoList = document.getElementById("github-repos");
-    const githubUsername = "yourusername"; // <-- CHANGE THIS TO YOUR GITHUB USERNAME
-
-    fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=5`)[span_3](start_span)[span_3](end_span)
-        .then(response => {
-            if (!response.ok) throw new Error("Could not fetch GitHub repositories.");
-            return response.json();
-        })
-        .then(repos => {
-            repoList.innerHTML = "";
-            repos.forEach(repo => {
-                const li = document.createElement("li");
-                li.innerHTML = `<a href="${repo.html_url}" target="_blank"><strong>${repo.name}</strong></a> - ${repo.language || "Code"} (${repo.description || "No description"})`;
-                repoList.appendChild(li);
-            });
-        })
-        .catch(error => {
-            repoList.innerHTML = "<li>GitHub data is currently unavailable.</li>";
-            console.error(error);
-        });
-
     // 3. Contact Form Submission Handling
     const contactForm = document.getElementById("contact-form");
     const formFeedback = document.getElementById("form-feedback");
