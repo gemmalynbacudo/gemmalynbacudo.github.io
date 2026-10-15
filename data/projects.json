@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio built using HTML, CSS, and JavaScript.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "role": "Frontend Developer",
+    "link": "https://github.com/yourusername/portfolio"
+  },
+  {
+    "title": "Task Manager App",
+    "description": "An interactive web app to manage daily tasks and organize workflows.",
+    "technologies": ["JavaScript", "Local Storage", "CSS"],
+    "role": "Full Stack",
+    "link": "https://github.com/yourusername/task-manager"
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "A web app that fetches live weather forecasts using an external API.",
+    "technologies": ["HTML", "JavaScript", "Weather API"],
+    "role": "Developer",
+    "link": "https://github.com/yourusername/weather-app"
+  }
+]
